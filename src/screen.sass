@@ -178,33 +178,35 @@ a
             font-style: normal
         a.twitter-anywhere-user
           font-style: normal
-  > ul.people
+  > .partecipanti
     +column(8)
     +last
     margin-top: 20px
-    li.person
-      float: left
-      margin: 0px 5px 5px 0px
-      img
-        width: 48px
-        height: 48px
-  a.partecipa
-    width: 200px
-    height: 27px
-    display: inline-block
-    margin: 20px auto 0
-    padding: 10px 0 0 0
-    color: #FFF
-    text-align: center
-    text-shadow: 0 1px 0px $black
-    background: $aqua
-    border: 1px solid $black
-    +border-radius(10px)
-    +transition("all linear 1s")
-    &:hover
-      text-decoration: none
-      background: darken($aqua, 10%)
-      +box-shadow(0, 0, 10px, $aqua)
+    ul
+      li.person
+        float: left
+        margin: 0px 5px 5px 0px
+        img
+          width: 48px
+          height: 48px
+    a.partecipa
+      width: 200px
+      height: 27px
+      clear: both
+      display: inline-block
+      margin: 20px auto 0
+      padding: 10px 0 0 0
+      color: #FFF
+      text-align: center
+      text-shadow: 0 1px 0px $black
+      background: $aqua
+      border: 1px solid $black
+      +border-radius(10px)
+      +transition("all linear 1s")
+      &:hover
+        text-decoration: none
+        background: darken($aqua, 10%)
+        +box-shadow(0, 0, 10px, $aqua)
 
 #dove
   +column(24)
