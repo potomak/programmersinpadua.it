@@ -1,0 +1,275 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import compass/reset
+
+// To configure blueprint, edit the partials/base.sass file.
+@import partials/base
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+
+// Import CSS3
+@import compass/css3
+
+
+/* START HERE
+ *----------------------------------------
+
+body
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 0
+  font-weight: 400
+  font-family: "helvetica neue", "helvetica", "verdana", sans-serif
+  color: $black
+  background: #ddd
+
+.left
+  float: left
+  width: auto
+  height: auto
+
+.right
+  float: right
+  width: auto
+  height: auto
+
+h1
+  margin: 0 0 20px 0
+  font-size: 24px
+  font-weight: 500
+  text-shadow: 0 1px 0 $aqua
+
+p
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+
+a
+  color: $aqua
+  text-decoration: none
+  position: relative
+  &:hover
+    text-decoration: underline
+  &:active
+    top: 1px
+
+#top-bar
+  width: 100%
+  height: 3px
+  margin: 0
+  padding: 0
+  background: $aqua
+  border-top: 1px solid $black
+
+#main
+  +container
+  height: auto
+  margin-top: 50px
+
+#chi-siamo
+  +column(24)
+  margin-top: 50px
+  .left
+    +column(10)
+  .right
+    +column(14)
+    +last
+  h1
+    width: 100%
+    text-align: left
+  p
+    width: 100%
+    text-align: justify
+    text-indent: 20px
+
+#logo
+  +column(10)
+  height: 130px
+  position: relative
+  -webkit-transform-style: preserve-3d
+  -webkit-transition: -webkit-transform 1s
+  &.animate
+    -webkit-transform: rotateX(180deg)
+  .face
+    position: absolute
+    top: 0
+    left: 0
+    -webkit-backface-visibility: hidden
+    &.active
+      z-index: 10
+  > .image
+    width: 100%
+    height: 100%
+    background: url("../images/logo.png") no-repeat #dddddd
+    -webkit-transition: -webkit-transform 1s
+  > .text
+    width: 100%
+    height: 100%
+    background: #ddd
+    -webkit-transform: rotateX(180deg)
+    > p
+      font-size: 120px
+      line-height: 120px
+
+#tools
+  +column(10)
+  height: 30px
+  margin-top: 15px
+  .twitter
+    width: 167px
+    display: inline
+    .twitter-share-button
+      font-size: 14px
+  .facebook
+    width: 167px
+    display: inline
+    > iframe
+      border: none
+      overflow: hidden
+      width: 167px
+      height: 21px
+
+#prossimi
+  +column(24)
+  +last
+  margin-top: 50px
+  > ul.talk
+    +column(15)
+    float: left
+    margin: 20px 40px 0 0
+    > li
+      margin: 30px 0
+      &:first-child
+        margin: 0 0 20px 0
+      &:last-child
+        margin: 20px 0 0 0
+      > img
+        max-width: 48px
+        max-height: 48px
+        float: left
+        margin: 0 10px 0 0
+        border: 1px solid $black
+      > span
+        margin: 10px 0 0 0
+        &.title
+          font-weight: bold
+          &:before
+            content: '\201C'
+          &:after
+            content: '\201D'
+        &.tag
+          display: inline-block
+          margin: 0 0 0 5px
+          padding: 3px
+          font-size: 11px
+          color: #fff
+          background: $aqua
+          border: 1px solid $black
+          +border-radius(3px)
+        &.author
+          display: block
+          font-style: italic
+          &:before
+            content: 'by '
+            font-style: normal
+        a.twitter-anywhere-user
+          font-style: normal
+  > ul.people
+    +column(8)
+    +last
+    margin-top: 20px
+    li.person
+      float: left
+      margin: 0px 5px 5px 0px
+      img
+        width: 48px
+        height: 48px
+  a.partecipa
+    width: 200px
+    height: 27px
+    display: inline-block
+    margin: 20px auto 0
+    padding: 10px 0 0 0
+    color: #FFF
+    text-align: center
+    text-shadow: 0 1px 0px $black
+    background: $aqua
+    border: 1px solid $black
+    +border-radius(10px)
+    +transition("all linear 1s")
+    &:hover
+      text-decoration: none
+      background: darken($aqua, 10%)
+      +box-shadow(0, 0, 10px, $aqua)
+
+#dove
+  +column(24)
+  +last
+  margin-top: 50px
+
+#map
+  width: 948px
+  height: 398px
+  margin: 20px auto 0 auto
+  border: 1px solid $black
+  > p
+    width: 960px
+    height: 200px
+    padding: 200px 0 0 0
+    text-align: center
+
+#footer
+  +column(24)
+  +last
+  margin-top: 50px
+  text-align: center
+  p
+    font-size: 13px
+    &.copyright
+      font-size: 14px
+  .avedesign
+    width: 69px
+    height: 33px
+    display: inline-block
+    background: url("../images/ave.png") no-repeat
+  .fruktarbo
+    width: 143px
+    height: 45px
+    display: inline-block
+    background: url("../images/fruktarbo.png") no-repeat
+  .dexter
+    width: 35px
+    height: 45px
+    display: inline-block
+    margin: 0 0 0 5px
+    background: url("../images/dexter.png") no-repeat
+
+/* FALLBACK
+ *----------------------------------------
+
+.wf-museoslab1museoslab2-n3-active
+  body, p
+    font-family: "museo-slab-1","museo-slab-2",serif
+    font-weight: 300
+  #chi-siamo > blockquote
+    font-family: "tangerine-1","tangerine-2",sans-serif
+    font-size: 48px
+    &:before
+      font-size: 100px
+      line-height: 0
+    &:after
+      font-size: 100px
+      line-height: 0
+  #logo .text > p
+    font-size: 100px
+    line-height: 100px
+
+/* pigats' additions, to be revised
+ *----------------------------------------
+
+#footer
+  color: #666
+  font-size: .8em
+  p
+    margin-bottom: 10px
