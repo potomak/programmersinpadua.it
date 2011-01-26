@@ -139,24 +139,35 @@ a
   margin-top: 50px
   > ul.talk
     +column(15)
-    float: left
     margin: 20px 40px 0 0
-    > li
+    &.wide
+      +column(24)
+      +last
+      li
+        +clearfix
+        margin: 50px 0
+        &.first
+          margin: 0 0 50px 0
+    li
       margin: 30px 0
       &:first-child
         margin: 0 0 20px 0
       &:last-child
         margin: 20px 0 0 0
-      > img
+      p
+        margin-top: 10px
+      img
         max-width: 48px
         max-height: 48px
         float: left
         margin: 0 10px 0 0
         border: 1px solid $black
-      > span
+      span
         margin: 10px 0 0 0
         &.title
           font-weight: bold
+          &.big
+            font-size: 20px
           &:before
             content: '\201C'
           &:after
@@ -176,8 +187,15 @@ a
           &:before
             content: 'by '
             font-style: normal
-        a.twitter-anywhere-user
-          font-style: normal
+      a.twitter-anywhere-user
+        font-style: normal
+      a.link
+        display: inline-block
+        margin: 10px
+      .author, .slideshare, .youtube
+        +column(8)
+      .youtube
+        +last
   > .partecipanti
     +column(8)
     +last
@@ -207,6 +225,10 @@ a
         text-decoration: none
         background: darken($aqua, 10%)
         +box-shadow(0, 0, 10px, $aqua)
+  .materiale
+    +column(24)
+    h1
+      margin-top: 20px
 
 #dove
   +column(24)

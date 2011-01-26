@@ -1,0 +1,172 @@
+!!! 5
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
+	%head
+		%title Programmers in Padua
+		%meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+		%link{:rel => "stylesheet", :href => "stylesheets/screen.css", :type => "text/css", :media => "all"}
+		%script{:type => "text/javascript", :src => "js/head.min.js"}
+		:javascript
+			head.js("http://use.typekit.com/bna6ihv.js", function() {
+				try{Typekit.load();}catch(e){}
+			});
+			head.js("js/initialize.js", "http://maps.google.com/maps/api/js?sensor=true&callback=initialize");
+			head.js("http://platform.twitter.com/widgets.js");
+			head.js("http://platform.twitter.com/anywhere.js?id=73J1npUZhFT4GRFXoFpGHQ&v=1", function() {
+				twttr.anywhere(function (T) {
+					T("#prossimi ul li span.author").hovercards();
+				});
+			});
+			head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", "js/pip.js");
+	%body
+		%a.ribbon{:href =>"https://github.com/MisterJack/programmersinpadua.it"}
+			%img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub"}
+		#top-bar
+		#main
+			#chi-siamo
+				.left
+					#logo
+						.image.front.face.active
+						.text.back.face
+							%p #pip11
+					#tools
+						.twitter
+							%a.twitter-share-button{:href => "http://twitter.com/share", :"data-url" => "http://www.programmersinpadua.it", :"data-text" => "Programmers In Padua #pip11", :"data-count" => "horizontal"}
+								Tweet
+						.facebook
+							%iframe{:src => "http://www.facebook.com/plugins/like.php?href=programmersinpadua.it&amp;layout=button_count&amp;show_faces=false&amp;width=167&amp;action=like&amp;colorscheme=light&amp;height=21", :scrolling => "no", :frameborder => "0", :allowTransparency => "true"}
+				.right
+					%h1
+						Chi siamo e cosa facciamo
+					%p
+						Vogliamo creare un club di persone che per lavoro e passione si occupano di programmazione, nuove tecnologie e startup.
+					%p
+						Ci incontriamo una volta al mese in un ambiente aperto e informale, dove sono i partecipanti a proporsi per i talk. Dopo l'evento, birra e pizza tutti assieme.
+					%p
+						Per restare aggiornato entra nel gruppo Facebook "
+						%a{:href => "http://www.facebook.com/home.php?sk=group_192130790797621&ap=1"} Programmers in Padua
+						" e segui il
+						%a{:href => "http://www.fruktarbo.com/blog/programmers-in-padua/"} blog
+			#prossimi
+				%ul.talk.wide
+					%li 
+						%h1 21 gennaio
+					%li.first
+						.author
+							%img{:src => "http://a1.twimg.com/profile_images/369179019/avatar.png", :alt => "Andrea Pigato"}
+							%span.title Università 2.0
+							%br/
+							%span.tag{:style=>"background-color: #E5C062; color: #555;"} startup
+							%span.tag{:style=>"background-color: #E5C062; color: #555;"} uni20
+							%br/
+							%span.author Andrea Pigato – @pigatss
+							%br/
+							%a.link{:href => "http://www.slideshare.net/pigats/startup-uni20"} Slide
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=q_f33osjjUg"} Video
+						.slideshare
+							#__ss_6663379{:style => "width:310px"}
+								%object#__sse6663379{:height => "230", :width => "310"}
+									%param{:name => "movie", :value => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=pip11-110122105643-phpapp02&stripped_title=startup-uni20&userName=pigats"}/
+									%param{:name => "allowFullScreen", :value => "true"}/
+									%param{:name => "allowScriptAccess", :value => "always"}/
+									%embed{:allowfullscreen => "true", :allowscriptaccess => "always", :height => "230", :name => "__sse6663379", :src => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=pip11-110122105643-phpapp02&stripped_title=startup-uni20&userName=pigats", :type => "application/x-shockwave-flash", :width => "310"}
+						.youtube
+							%iframe.youtube-player{:allowFullScreen => "", :frameborder => "0", :height => "230", :src => "http://www.youtube.com/embed/q_f33osjjUg", :title => "YouTube video player", :type => "text/html", :width => "310"}
+					%li
+						.author
+							%img{:src => "http://a0.twimg.com/profile_images/953277858/IMG_0360.JPG", :alt => "Alessandro Vendruscolo"}
+							%span.title HAML & SASS
+							%br/
+							%span.tag prog
+							%span.tag{:style=>"background-color: #CF6A4C;"} webdesign	
+							%br/
+							%span.author Alessandro Vedruscolo – @MisterJack
+							%br/
+							%a.link{:href => "http://www.slideshare.net/MisterJack/pip-haml-sass-compass"} Slide
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=TyI-kVbTSz8"} Video
+						.slideshare
+							#__ss_6676416{:style => "width:310px"}
+								%object#__sse6676416{:height => "230", :width => "310"}
+									%param{:name => "movie", :value => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=pip-hamlsass-110123162910-phpapp01&rel=0&stripped_title=pip-haml-sass-compass&userName=MisterJack"}/
+									%param{:name => "allowFullScreen", :value => "true"}/
+									%param{:name => "allowScriptAccess", :value => "always"}/
+									%embed{:allowfullscreen => "true", :allowscriptaccess => "always", :height => "230", :name => "__sse6676416", :src => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=pip-hamlsass-110123162910-phpapp01&rel=0&stripped_title=pip-haml-sass-compass&userName=MisterJack", :type => "application/x-shockwave-flash", :width => "310"}
+						.youtube
+							%iframe.youtube-player{:allowFullScreen => "", :frameborder => "0", :height => "230", :src => "http://www.youtube.com/embed/TyI-kVbTSz8", :title => "YouTube video player", :type => "text/html", :width => "310"}
+					%li
+						.author
+							%img{:src => "http://a0.twimg.com/profile_images/1087498566/Alberto_De_Bortoli.jpeg", :alt => "Alberto De Bortoli"}
+							%span.title Cross platform mobile development
+							%br/
+							%span.tag prog
+							%span.tag{:style=>"background-color: #9B859D;"} mobile
+							%span.tag{:style=>"background-color: #9B859D;"} android
+							%span.tag{:style=>"background-color: #9B859D;"} ios
+							%br/
+							%span.author Alberto De Bortoli – @albertodebo
+							%br/
+							%a.link{:href => "http://www.slideshare.net/albertodebortoli/cross-platform-mobile-development-6663183", :title => "Cross platform mobile development "} Slide
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=-M4s6czMMzs"} Video 1/2
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=mdpeD80EQe8"} Video 2/2
+						.slideshare
+							#__ss_6663183{:style => "width:310px"}
+								%object#__sse6663183{:height => "230", :width => "310"}
+									%param{:name => "movie", :value => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=talk21gennaio-110122102836-phpapp01&stripped_title=cross-platform-mobile-development-6663183&userName=albertodebortoli"}/
+									%param{:name => "allowFullScreen", :value => "true"}/
+									%param{:name => "allowScriptAccess", :value => "always"}/
+									%embed{:allowfullscreen => "true", :allowscriptaccess => "always", :height => "230", :name => "__sse6663183", :src => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=talk21gennaio-110122102836-phpapp01&stripped_title=cross-platform-mobile-development-6663183&userName=albertodebortoli", :type => "application/x-shockwave-flash", :width => "310"}
+						.youtube
+							%iframe.youtube-player{:allowFullScreen => "", :frameborder => "0", :height => "230", :src => "http://www.youtube.com/embed/-M4s6czMMzs", :title => "YouTube video player", :type => "text/html", :width => "310"}
+					%li
+						.author
+							%img{:src => "http://a3.twimg.com/profile_images/1157609014/foto.JPG", :alt => "Giordano Scalzo"}
+							%span.title Code Kata: sharpening our coding skills
+							%br/
+							%span.tag{:style=>"background-color: #8F9D58;"} agile
+							%span.tag{:style=>"background-color: #8F9D58;"} TDD
+							%span.tag{:style=>"background-color: #8F9D58;"} kata
+							%br/
+							%span.author Giordano Scalzo – @giordanoscalzo
+							%br/
+							%a.link{:href => "http://www.slideshare.net/giordano/code-kata-6662228", :title => "Code kata"} Code kata
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=YB6CfhBAZMY"} Video 1/3
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=bBHgN_qbbsA"} Video 2/3
+							%br/
+							%a.link{:href => "http://www.youtube.com/watch?v=VazEYu5ZLjE"} Video 3/3
+						.slideshare
+							#__ss_6662228{:style => "width:310px"}
+								%object#__sse6662228{:height => "230", :width => "310"}
+									%param{:name => "movie", :value => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=codekata-110122075320-phpapp02&stripped_title=code-kata-6662228&userName=giordano"}/
+									%param{:name => "allowFullScreen", :value => "true"}/
+									%param{:name => "allowScriptAccess", :value => "always"}/
+									%embed{:allowfullscreen => "true", :allowscriptaccess => "always", :height => "230", :name => "__sse6662228", :src => "http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=codekata-110122075320-phpapp02&stripped_title=code-kata-6662228&userName=giordano", :type => "application/x-shockwave-flash", :width => "310"}
+						.youtube
+							%iframe.youtube-player{:allowFullScreen => "", :frameborder => "0", :height => "230", :src => "http://www.youtube.com/embed/YB6CfhBAZMY", :title => "YouTube video player", :type => "text/html", :width => "310"}
+			#footer
+				%p 
+					Organizzato con il supporto del 
+					%a{:href => "http://www.collegiomazza.it"} Collegio Mazza
+					, che offre gli spazi per gli incontri e un rimborso spese per gli ospiti che invitiamo da fuori Padova.
+
+				%p © 2011 – Alcuni diritti riservati. Dexter è copyright di Cartoon Network LP, LLLP
+
+				%p
+					%a.avedesign{:href => "http://avedesign.me"}
+					%a.fruktarbo{:href => "http://fruktarbo.com"}
+					%span.dexter
+		%script{:type => "text/javascript"}
+		:javascript
+			var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-20759502-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
