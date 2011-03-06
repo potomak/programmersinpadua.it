@@ -145,11 +145,14 @@ a
       +last
       li
         +clearfix
+        +column(24, true)
         margin: 50px 0
         &.first
           margin: 0 0 50px 0
     li
-      margin: 30px 0
+      +column(15, true)
+      margin: 15px 0
+      clear: left
       &:first-child
         margin: 0 0 20px 0
       &:last-child
@@ -166,9 +169,10 @@ a
           max-width: 90px
           max-height: 102px
       span
-        margin: 10px 0 0 0
+        float: left
         &.title
           font-weight: bold
+          text-align: left
           &.big
             font-size: 20px
           &:before
@@ -185,6 +189,7 @@ a
           border: 1px solid $black
           +border-radius(3px)
         &.author
+          clear: left
           display: block
           font-style: italic
           &:before

@@ -16,7 +16,7 @@
 					T("#prossimi ul li span.author").hovercards();
 				});
 			});
-			head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", "js/pip.js?27012011");
+			head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", "js/pip.js");
 	%body
 		%a.ribbon{:href =>"https://github.com/MisterJack/programmersinpadua.it"}
 			%img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub"}
@@ -49,36 +49,40 @@
 			#prossimi
 				%ul.talk
 					%li 
-						%h1 4 febbario - ore 18.30
+						%h1 21 gennaio - ore 18.30
 					%li
-						%span.title.big Corso Scala - parte prima
-						%p
-							%img{:src => "images/scala.png", :alt => "scala", :style => "max-width: 150px; float: right; margin: 0 0 5px 10px;"}/
-							Nel corso si vuole introdurre il linguaggio Scala mostrandone le idee che ne stanno alla base e gli aspetti vincenti.
-						%p Verrà illustrato il paradigma della programmazione funzionale e sarà messo a confronto con la programmazione orientata agli oggetti.
-					%li 
-						%h1 5 febbario - ore 9.30
+						%img{:src => "http://a1.sphotos.ak.fbcdn.net/hphotos-ak-ash1/163054_1776909906579_1354293070_31972720_3849397_n.jpg", :alt => "Roberto Mancin"}
+						%span.title S.O.S. 3.0 = Mind Reader 3.0 + alternative & extreme input devices
+						%span.tag{:style=>"background-color: #8F9D58;"} accessibilità
+						%span.tag{:style=>"background-color: #8F9D58;"} web
+						%span.author Roberto Mancin
 					%li
-						%span.title.big Corso Scala - parte seconda
-						%p Nella seconda parte del corso vedremo come la programmazione funzionale può essere usata in modo naturale assieme alla  programmazione ad oggetti, per poi approfondire il supporto di Scala alla programmazione concorrente.
-					%li 
-						%h1 Mario Fusco
+						%img{:src => "http://a2.twimg.com/profile_images/1154230106/31.jpg", :alt => "Massimo Scarpis"}
+						%span.title Incubare una startup in H-Farm
+						%span.tag{:style=>"background-color: #E5C062; color: #555;"} startup
+						%span.tag{:style=>"background-color: #E5C062; color: #555;"} incubator
+						%br
+						%span.author Massimo Scarpis – @massimoscarpis
 					%li
-						%img.big{:src => "images/mariofusco.jpg", :alt => "Mario Fusco"}/
-						%p Mario si è unito alla comunità degli sviluppatori Java durante il periodo degli studi universitari e ne è entusiasta da allora.
-						%p Ha più di dieci anni di esperienza come sviluppatore Java ed è stato coinvolto (e spesso ha condotto) molti progetti enterprise di successo in diverse aziende.
-						%p Al momento vive e lavora a Lugano dove ha fondato il JUG locale.
-						%p Tra i suoi interessi c'è la programmazione con linguaggi funzionali, principalmente Scala, e lo sviluppo di Domain Specific Languages. Unendo queste due passioni ha creato una libreria opensource, lambdaj, con lo scopo di fornire delle funzionalità DSL per la manipolazione delle collezioni e di permettere un po' di programmazione funzionale in Java
+						%img{:src => "?", :alt => "?"}
+						%span.title ?
+						%span.tag{:style=>"background-color: #CF6A4C;"} ?	
+						%span.author ? – ?
+					%li
+						%img{:src => "?", :alt => "Giorgio Urso"}
+						%span.title Calcolo parallelo con CUDA
+						%span.tag prog
+						%span.tag{:style=>"background-color: #9B859D;"} CUDA
+						%span.tag{:style=>"background-color: #9B859D;"} calcolo parallelo
+						%span.author Giorgio Urso
 				.partecipanti
 					%ul.people
 						%li
 							%h1 Ecco chi è già dei nostri
-					%a.partecipa{:href => "http://www.facebook.com/event.php?eid=106503379424331"} Partecipa anche tu!
-				.materiale
-					%h1 Materiale vecchie presentazioni
-					%p
-						Stai cercando il materiale degli incontri passati? Controlla
-						%a{:href => "materiale.html"}qui
+					%a.partecipa{:href => "http://www.facebook.com/event.php?eid=190481680963215"} Partecipa anche tu!
+				-#%p
+					-#Stai cercando il materiale degli incontri passati? Controlla
+					-#%a{:href => "#"}qui
 			#dove
 				%h1
 					Raggiungici presso il Collegio Mazza
