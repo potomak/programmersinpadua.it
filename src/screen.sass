@@ -169,7 +169,6 @@ a
           max-width: 90px
           max-height: 102px
       span
-        float: left
         &.title
           font-weight: bold
           text-align: left
@@ -190,6 +189,7 @@ a
           +border-radius(3px)
         &.author
           clear: left
+          float: left
           display: block
           font-style: italic
           &:before
@@ -200,8 +200,10 @@ a
       a.link
         display: inline-block
         margin: 10px
-      .author, .slideshare, .youtube
+      div.author, .slideshare, .youtube
         +column(8)
+        span.author
+          +column(8, true)
       .youtube
         +last
   > .partecipanti
