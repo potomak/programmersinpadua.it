@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$.getJSON('./attending_2.json', function(data){
+	$.getJSON('./attending_3.json', function(data){
 		for(var i=0; i<data.length; i++) {
 			$('ul.people').append('<li class="person"><img src="https://graph.facebook.com/'+ data[i].id +'/picture" alt="'+ data[i].name +'" title="'+ data[i].name +'"/></li>')
 		}
