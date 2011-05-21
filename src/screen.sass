@@ -163,16 +163,21 @@ a
       p
         margin-top: 10px
       img
-        #max-width: 60px
-        #min-width: 40px
-        #float: left
-        #margin: 0 10px 0 0
-        #border: 1px solid $black
-        margin-bottom: 18px
-        display: block
+        max-width: 60px
+        min-width: 40px
+        float: left
+        margin: 0 10px 0 0
+        border: 1px solid $black
         &.big
           max-width: 90px
           max-height: 102px
+        &.right-size
+          float: none
+          max-width: none
+          margin: 0
+          margin-bottom: 18px
+          display: block  
+          border: none    		
       span
         &.title
           font-weight: bold
