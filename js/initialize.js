@@ -1,6 +1,6 @@
 function initialize() {
-	//var myLatlng = new google.maps.LatLng(45.411617,11.868153); //collegio mazza
-	var myLatlng = new google.maps.LatLng(45.411526,11.894224); //caffè ti amo
+	var myLatlng = new google.maps.LatLng(45.411617,11.868153); //collegio mazza
+	//var myLatlng = new google.maps.LatLng(45.411526,11.894224); //caffè ti amo
 	var myOptions = {
 		zoom: 16,
 		center: myLatlng,
