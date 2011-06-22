@@ -13,7 +13,7 @@
 			head.js("http://platform.twitter.com/widgets.js");
 			head.js("http://platform.twitter.com/anywhere.js?id=73J1npUZhFT4GRFXoFpGHQ&v=1", function() {
 				twttr.anywhere(function (T) {
-					T("#prossimi ul li span.author").hovercards();
+					T("#prossimi ul li").hovercards();
 				});
 			});
 			head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", "js/pip.js");
@@ -102,7 +102,7 @@
 					%ul.people
 						%li
 							%h1 Ecco chi è già dei nostri
-					%a.partecipa{:href => "http://www.facebook.com/event.php?eid=147954778609973"} Partecipa anche tu!
+					%a.partecipa{:href => "https://www.facebook.com/event.php?eid=222710044419999"} Partecipa anche tu!
 				.materiale
 					%h1 Materiale vecchie presentazioni
 					%p
