@@ -6,18 +6,15 @@
 		%link{:rel => "stylesheet", :href => "stylesheets/screen.css", :type => "text/css", :media => "all"}
 		%script{:type => "text/javascript", :src => "js/head.min.js"}
 		:javascript
+			head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", "js/initialize.js", "http://maps.google.com/maps/api/js?sensor=true&callback=initialize", "js/pip.js", "http://platform.twitter.com/widgets.js" );
 			head.js("http://use.typekit.com/bna6ihv.js", function() {
 				try{Typekit.load();}catch(e){}
 			});
-			head.js("http://platform.twitter.com/widgets.js");
 			head.js("http://platform.twitter.com/anywhere.js?id=73J1npUZhFT4GRFXoFpGHQ&v=1", function() {
 				twttr.anywhere(function (T) {
 					T("#prossimi ul li").hovercards();
 				});
 			});
-			%script{:type=>"text/javascript", :src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}
-			%script{:type=>"text/javascript", :src=>"http://maps.google.com/maps/api/js?sensor=true&callback=initialize"}
-			%script{:type=>"text/javascript", :src=>"js/pip.js"}
 	%body
 		%a.ribbon{:href =>"https://github.com/MisterJack/programmersinpadua.it"}
 			%img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub"}
