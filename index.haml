@@ -5,8 +5,13 @@
 		%meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
 		%link{:rel => "stylesheet", :href => "stylesheets/screen.css", :type => "text/css", :media => "all"}
 		%script{:type => "text/javascript", :src => "js/head.min.js"}
-		:javascript
-			head.js("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", "js/initialize.js", "http://maps.google.com/maps/api/js?sensor=true&callback=initialize", "js/pip.js", "http://platform.twitter.com/widgets.js" );
+		%script{:type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}
+		%script{:type => "text/javascript", :src => "js/initialize.js"}
+		%script{:type => "text/javascript", :src => "http://maps.google.com/maps/api/js?sensor=true&callback=initialize"}
+		%script{:type => "text/javascript", :src => "js/pip.js"}
+		%script{:type => "text/javascript", :src => "http://platform.twitter.com/widgets.js"}
+		
+		:javascript			
 			head.js("http://use.typekit.com/bna6ihv.js", function() {
 				try{Typekit.load();}catch(e){}
 			});
