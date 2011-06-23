@@ -1,4 +1,4 @@
-function initialize() {
+$(document).ready( function() {
 	var myLatlng = new google.maps.LatLng(45.411617,11.868153); //collegio mazza
 	//var myLatlng = new google.maps.LatLng(45.411526,11.894224); //caffè ti amo
 	var myOptions = {
@@ -18,4 +18,4 @@ function initialize() {
 		map: map,
 		title:"Hello World!"
 	});
-}
+})
