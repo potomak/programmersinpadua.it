@@ -1,150 +1,150 @@
 !!! 5
 %html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
-	%head
-		%title Programmers in Padua
-		%meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
-		%link{:rel => "stylesheet", :href => "stylesheets/screen.css", :type => "text/css", :media => "all"}
-		%script{:type => "text/javascript", :src => "js/head.min.js"}
-		%script{:type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}
-		%script{:type => "text/javascript", :src => "js/initialize.js"}
-		%script{:type => "text/javascript", :src => "http://maps.google.com/maps/api/js?sensor=true"}
-		%script{:type => "text/javascript", :src => "js/pip.js"}
-		%script{:type => "text/javascript", :src => "http://platform.twitter.com/widgets.js"}
-		
-		:javascript			
-			head.js("http://use.typekit.com/bna6ihv.js", function() {
-				try{Typekit.load();}catch(e){}
-			});
-			head.js("http://platform.twitter.com/anywhere.js?id=73J1npUZhFT4GRFXoFpGHQ&v=1", function() {
-				twttr.anywhere(function (T) {
-					T("#prossimi ul li").hovercards();
-				});
-			});
-	%body
-		%a.ribbon{:href =>"https://github.com/MisterJack/programmersinpadua.it"}
-			%img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub"}
-		#top-bar
-		#main
-			#chi-siamo
-				.left
-					#logo
-						.image.front.face.active
-						.text.back.face
-							%p #pip11
-					#tools
-						.twitter
-							%a.twitter-share-button{:href => "http://twitter.com/share", :"data-url" => "http://www.programmersinpadua.it", :"data-text" => "Programmers In Padua #pip11", :"data-count" => "horizontal"}
-								Tweet
-						.facebook
-							%iframe{:src => "http://www.facebook.com/plugins/like.php?href=programmersinpadua.it&amp;layout=button_count&amp;show_faces=false&amp;width=167&amp;action=like&amp;colorscheme=light&amp;height=21", :scrolling => "no", :frameborder => "0", :allowTransparency => "true"}
-				.right
-					%h1
-						Chi siamo e cosa facciamo
-					%p
-						Vogliamo creare un club di persone che per lavoro e passione si occupano di programmazione, nuove tecnologie e startup.
-					%p
-						Ci incontriamo una volta al mese in un ambiente aperto e informale, dove sono i partecipanti a proporsi per i talk. Dopo l'evento, birra e pizza tutti assieme.
-					%p
-						Per restare aggiornato entra nel gruppo Facebook "
-						%a{:href => "http://www.facebook.com/home.php?sk=group_192130790797621&ap=1"} Programmers in Padua
-						" e segui il
-						%a{:href => "http://www.fruktarbo.com/blog/programmers-in-padua/"} blog
-			#prossimi
-				%h1 
-					Venerd&igrave; 24 Giugno
-				%h2 Ultimo incontro prima della pausa estiva
-				%p 
-					Il prossimo #pip11 &egrave; anche l&#39;occasione per salutarci di persona prima della pausa estiva: quindi non avete scuse per non venire!
-				%p 
-					Mi raccomando, segnatevi sull&#39;
-					%a{:href => "https://www.facebook.com/event.php?eid=222710044419999"} evento facebook
-					e fatelo sapere a tutti i vostri amici e colleghi.
-				%h2 Locandina
-				%p 
-					Scarica la nostra&nbsp;
-					%a{:href=>"pip11-6.pdf", :title=>"La favolosa locandina del #pip11 di Giugno"}>favolosa locandina
-					, e spamma tutti i tuoi amici. Poi stampala e affiggila nella bacheca dell&#39;ufficio, in aula o sulla macchinetta del caff&egrave;. Ci contiamo!
-				
-				%h1 Programma
-				%ul
-					%li 
-						%h2 h: 18:30 &rightarrow; Talk presso il Collegio Mazza
-								
-					%li
-						%h2 h: ~21 &rightarrow; Pizza &amp; networking presso la pizzeria Kofler
-				%ul.talk
-					%li
-						%img.right{:src=>"images/people/stefanoceschiberrini.jpg"}
-						Stefano Ceschi Berrini (@stecb): 
-						%b MooTools (vs. jQuery)
-						%p Ultimamente nel panorama front-end/User Interface development gli sviluppatori alle prime armi si buttano a capofitto verso il &ldquo;dio&rdquo; dei framework open source javascript, ossia jQuery. A volte non si conosce per&ograve; che esistono tante altre valide alternative, una su tutte MooTools. Il talk pone come obiettivo l&#39;analisi a grandi linee di questo framework, mostrandone pregi/difetti e potenzialit&agrave;, e le maggiori differenze con jQuery. 	
-						
-					%li
-						%img.right{:src=>"images/people/andreilevin.jpg"}
-						Андрей Левин (Andrei Levin): 
-						%b Quando le startup falliscono
-						%p In Italia sembra esserci una diffusa cultura del rifiuto del fallimento, che tende a svalutarlo in modo pesante e a etichettare severamente chi lo subisce. Tuttavia il fallimento &egrave; una fra le pi&ugrave; utili esperienze sulla strada per il successo: &ldquo;fail soon, fail often&rdquo;, come si dice. Ce ne parlerà Андрей, utilizzando un caso vero che lo ha coinvolto personalmente. 	
-						
-					%li
-						%img.right{:src=>"images/people/diegogiorgini.jpg"}
-						Diego Giorgini (@ogeidix): 
-						%b Imparando il TDD
-						%p Diego sta facendo uno stage presso xpeppers, un team milanese di programmatori molto in gamba che lavora esclusivamente con metodologie agili. In questo talk ci parler&agrave; di Test Driven Development: cos&#39;&egrave; (specie per chi si &egrave; perso il talk di Giordano Scalzo a gennaio!), come lo si impara e quali vantaggi/svantaggi porta durante lo sviluppo.		
-					
-					%li
-						%img.right{:src=>"images/people/matteoflora.jpg"}
-						Matteo Flora (@lastknight): 
-						%b Sicurezza
-						%p 
-							Molti di voi conosceranno gi&agrave; Matteo, gli altri di certo avranno sentito parlare di una delle sue creature, FoolDNS. Matteo ha alle spalle un lungo trascorso come consulente nelle qualifiche di Security Evangelist e Perito Forense con elevata competenza in campi quali la Computer Forensics, la Programmazione Sicura e la gestione delle problematiche relative alla privacy. Quando l&#39;abbiamo contattato per invitarlo a tenere un talk sulla sicurezza, ci ha chiesto se poteva stare sul tecnico. Gli abbiamo risposto che siamo 
-							%b programmers in padua
-							,	quindi ovviamente s&igrave; :)
-						
-											
-				.partecipanti
-					%ul.people
-						%li
-							%h1 Ecco chi è già dei nostri
-					%a.partecipa{:href => "https://www.facebook.com/event.php?eid=222710044419999"} Partecipa anche tu!
-				.materiale
-					%h1 Materiale vecchie presentazioni
-					%p
-						Stai cercando il materiale degli incontri passati? Controlla
-						%a{:href => "materiale.html"}qui
-			#dove
-				%h1
-					Raggiungici presso il Collegio Mazza
-				%p
-					Ci troviamo nella sala don Tosi del Collegio Mazza:
-					%br/
-					Via Savonarola, 176 
-					%br/
-					35137 Padova
-				#map
-					%p
-						The map is loading
+  %head
+    %title Programmers in Padua
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+    %link{:rel => "stylesheet", :href => "stylesheets/screen.css", :type => "text/css", :media => "all"}
+    %script{:type => "text/javascript", :src => "js/head.min.js"}
+    %script{:type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "js/initialize.js"}
+    %script{:type => "text/javascript", :src => "http://maps.google.com/maps/api/js?sensor=true"}
+    %script{:type => "text/javascript", :src => "js/pip.js"}
+    %script{:type => "text/javascript", :src => "http://platform.twitter.com/widgets.js"}
+    
+    :javascript      
+      head.js("http://use.typekit.com/bna6ihv.js", function() {
+        try{Typekit.load();}catch(e){}
+      });
+      head.js("http://platform.twitter.com/anywhere.js?id=73J1npUZhFT4GRFXoFpGHQ&v=1", function() {
+        twttr.anywhere(function (T) {
+          T("#prossimi ul li").hovercards();
+        });
+      });
+  %body
+    %a.ribbon{:href =>"https://github.com/MisterJack/programmersinpadua.it"}
+      %img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub"}
+    #top-bar
+    #main
+      #chi-siamo
+        .left
+          #logo
+            .image.front.face.active
+            .text.back.face
+              %p #pip11
+          #tools
+            .twitter
+              %a.twitter-share-button{:href => "http://twitter.com/share", :"data-url" => "http://www.programmersinpadua.it", :"data-text" => "Programmers In Padua #pip11", :"data-count" => "horizontal"}
+                Tweet
+            .facebook
+              %iframe{:src => "http://www.facebook.com/plugins/like.php?href=programmersinpadua.it&amp;layout=button_count&amp;show_faces=false&amp;width=167&amp;action=like&amp;colorscheme=light&amp;height=21", :scrolling => "no", :frameborder => "0", :allowTransparency => "true"}
+        .right
+          %h1
+            Chi siamo e cosa facciamo
+          %p
+            Vogliamo creare un club di persone che per lavoro e passione si occupano di programmazione, nuove tecnologie e startup.
+          %p
+            Ci incontriamo una volta al mese in un ambiente aperto e informale, dove sono i partecipanti a proporsi per i talk. Dopo l'evento, birra e pizza tutti assieme.
+          %p
+            Per restare aggiornato entra nel gruppo Facebook "
+            %a{:href => "http://www.facebook.com/home.php?sk=group_192130790797621&ap=1"} Programmers in Padua
+            " e segui il
+            %a{:href => "http://www.fruktarbo.com/blog/programmers-in-padua/"} blog
+      #prossimi
+        %h1 
+          Venerd&igrave; 7 Ottobre
+        %h2 Ricominciano gli incontri dopo la pausa estiva!
+        %p 
+          Ricominciano gli incontri mensili di Programmers In Padua!
+        %p
+          Vi aspettiamo tutti per una nuova serie di talk e per ritrovarsi assieme davanti ad una buona pizza!
+          Segnatevi sull&#39;
+          %a{:href => "https://www.facebook.com/event.php?eid=222710044419999"} evento facebook
+          e fatelo sapere a tutti i vostri amici e colleghi con la nostra
+          %a{:href=>"pip11-7.pdf", :title=>"La favolosa locandina del #pip11 di Ottobre"}>favolosa locandina. Ci contiamo!
+    
+        %h1 Programma
+        %ul
+          %li 
+            %h2 h: 18:30 &rightarrow; Talk presso il Collegio Mazza
+                
+          %li
+            %h2 h: ~21 &rightarrow; Pizza &amp; networking presso la pizzeria Kofler
+        %ul.talk
+          %li
+            %img.right{:src=>"images/people/giovannicappellotto.jpg"}
+            Giovanni Cappellotto (@johnnyaboh): 
+            %span.title.big NodeJS
+            %span.tag{:style=>"background-color: #8F9D58;"} Web
+            %span.tag{:style=>"background-color: #9B859D;"} Server
+            %span.tag{:style=>"background-color: #E5C062; color: #555;"} Javascript
+            %p   
 
-			#footer
-				%p 
-					Organizzato con il supporto del 
-					%a{:href => "http://www.collegiomazza.it"} Collegio Mazza
-					, che offre gli spazi per gli incontri e un rimborso spese per gli ospiti che invitiamo da fuori Padova.
+          %li
+            %img.right{:src=>"images/people/andreareginato.jpg"}
+            Andrea Reginato (@andreareginato): 
+            %span.title.big Lelylan, reThing your house
+            %span.tag{:style=>"background-color: #8F9D58;"} Web
+            %span.tag{:style=>"background-color: #CF6A4C;"} Domotica
+            %p   
+            
+          %li
+            %img.right{:src=>"images/people/lorenzobraghetto.jpg"}
+            Lorenzo Breghetto (@monossido): 
+            %span.title.big Sviluppo mobile per Android
+            %span.tag{:style=>"background-color: #0080FF;"} Android
+            %span.tag{:style=>"background-color: #ededed; color: #000000;"} Java
+            %p     
+          
+          %li
+            %img.right{:src=>"images/people/who.jpg"}
+            You: 
+            %span.title.big We want you here!
+            %p            
+                      
+        .partecipanti
+          %ul.people
+            %li
+              %h1 Ecco chi è già dei nostri
+          %a.partecipa{:href => "https://www.facebook.com/event.php?eid=222710044419999"} Partecipa anche tu!
+        .materiale
+          %h1 Materiale vecchie presentazioni
+          %p
+            Stai cercando il materiale degli incontri passati? Controlla
+            %a{:href => "materiale.html"}qui
+      #dove
+        %h1
+          Raggiungici presso il Collegio Mazza
+        %p
+          Ci troviamo nella sala don Tosi del Collegio Mazza:
+          %br/
+          Via Savonarola, 176 
+          %br/
+          35137 Padova
+        #map
+          %p
+            The map is loading
 
-				%p &copy; 2011 &ndash; Alcuni diritti riservati. Dexter è copyright di Cartoon Network LP, LLLP
+      #footer
+        %p 
+          Organizzato con il supporto del 
+          %a{:href => "http://www.collegiomazza.it"} Collegio Mazza
+          , che offre gli spazi per gli incontri e un rimborso spese per gli ospiti che invitiamo da fuori Padova.
+
+        %p &copy; 2011 &ndash; Alcuni diritti riservati. Dexter è copyright di Cartoon Network LP, LLLP
 
 
-				%p
-					%a.avedesign{:href => "http://avedesign.me"}
-					%a.fruktarbo{:href => "http://fruktarbo.com"}
-					%span.dexter
-		%script{:type => "text/javascript"}
-		:javascript
-			var _gaq = _gaq || [];
-			  _gaq.push(['_setAccount', 'UA-20759502-1']);
-			  _gaq.push(['_trackPageview']);
+        %p
+          %a.avedesign{:href => "http://avedesign.me"}
+          %a.fruktarbo{:href => "http://fruktarbo.com"}
+          %span.dexter
+    %script{:type => "text/javascript"}
+    :javascript
+      var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20759502-1']);
+        _gaq.push(['_trackPageview']);
 
-			  (function() {
-			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			  })();
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
