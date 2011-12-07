@@ -2,3 +2,4 @@ stylesheets/*.css
 *.html
 *.json
 .sass-cache/
+.rvmrc
