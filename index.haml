@@ -22,7 +22,7 @@
       });
   %body
     %a.ribbon{:href =>"https://github.com/MisterJack/programmersinpadua.it"}
-      %img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub"}
+      %img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=", :alt => "Fork me on GitHub", :target=>"_blank"}
     #top-bar
     #main
       #chi-siamo
@@ -46,20 +46,21 @@
             Ci incontriamo una volta al mese in un ambiente aperto e informale, dove sono i partecipanti a proporsi per i talk. Dopo l'evento, birra e pizza tutti assieme.
           %p
             Per restare aggiornato entra nel gruppo Facebook "
-            %a{:href => "http://www.facebook.com/home.php?sk=group_192130790797621&ap=1"} Programmers in Padua
+            %a{:href => "http://www.facebook.com/home.php?sk=group_192130790797621&ap=1", :target=>"_blank"} Programmers in Padua
             " e segui il
-            %a{:href => "http://www.fruktarbo.com/blog/programmers-in-padua/"} blog
+            %a{:href => "http://www.fruktarbo.com/blog/programmers-in-padua/", :target=>"_blank"} blog
       #prossimi
         %h1 
           Venerd&igrave; 9 Dicembre
-        %h2 Ricominciano gli incontri dopo la pausa estiva!
-        %p 
-          Ricominciano gli incontri mensili di Programmers In Padua!
+        %h2 
+          Dopo un novembre di impegni per i corsi di
+          %a{:href=>"http://www.rails4rumble.it"} rails4rumble
+          finalmente un nuovo incontro!
         %p
-          Vi aspettiamo tutti per una nuova serie di talk e per ritrovarsi assieme davanti ad una buona pizza!
+          Vi aspettiamo con talk interessanti e un ospite davvero imperdibile.
           %br
           Segnatevi sull&#39;
-          %a{:href => "http://www.facebook.com/events/186802591414693"} evento facebook
+          %a{:href => "http://www.facebook.com/events/186802591414693", :target=>"_blank"} evento facebook
           e fatelo sapere a tutti i vostri amici e colleghi.
         %p
           Stampate la nostra
@@ -81,7 +82,9 @@
             %span.tag{:style=>"background-color: #8F9D58;"} desktop dev
             %span.tag{:style=>"background-color: #9B859D;"} kde
             %span.tag{:style=>"background-color: #E5C062; color: #555;"} UI
-            %p   
+            %p 
+              %b Usabilità in KDE
+              \: dopo una breve introduzione su KDE verrà illustrato come esempio di usabilità KDE Plasma Desktop e verranno illustrate le Human Interface Guidelines di KDE 4   
 
           %li
             %img.right{:src=>"images/people/laura_sicolo.jpg"}
@@ -100,18 +103,30 @@
             %p     
           
           %li
+            %hr/
+            %h2 Il nostro ospite:
             %img.right{:src=>"images/people/paolo_perrotta.jpg"}
             Paolo "Nusco" Perrotta:
             %span.title.big Java viene da Marte, Ruby da Venere
             %span.tag{:style=>"background-color: #0080FF;"} linguaggi statici
             %span.tag{:style=>"background-color: #0080FF;"} linguaggi dinamici
-         
-                      
+            %p Il mondo dei linguaggi di programmazione è dominato da due filosofie diverse: quella dei linguaggi "statici", come Java e C#, e quella dei linguaggi "dinamici", come Ruby e Python.
+            %p Gli esponenti di questi due mondi comunicano poco e si guardano con sospetto. Hanno valori, abitudini e modi di lavorare diversi. Un bravo sviluppatore dovrebbe sapersi muovere senza difficoltà da un mondo all'altro, ma la cosa sembra più difficile di quello che potremmo pensare.
+            %p Cosa impedisce a chi lavora (ad esempio) in Java di apprezzare pienamente Ruby, e viceversa?
+            %p In questo talk parlerò degli ostacoli che dobbiamo superare per diventare madrelingua in un linguaggio statico e uno dinamico allo stesso tempo. Prendendo a prestito qualche idea dalla psicologia cognitiva, spiegherò perché troviamo così difficile "pensare in un altro modo" rispetto a quello cui siamo abituati.
+            %p In particolare mostrerò come gli stessi principi di design e architettura portano ad un sistema software completamente diverso a seconda del linguaggio con il quale lavoriamo.
+            %hr/
+            %p Paolo Perrotta lavora da quattordici anni come sviluppatore di software freelance, autore di libri e articoli e coach di team agili. Ha lavorato per molte aziende e in molti campi diversi, dal software embedded per l'industria automobilistica ai videogiochi e alle applicazioni web. Dopo anni di Java e C# è diventato uno specialista di linguaggio Ruby.
+            %p 
+              Ha scritto il libro 
+              %a{:href=>"http://pragprog.com/book/ppmetr/metaprogramming-ruby", :target=>"_blank"}Metaprogramming Ruby 
+              per i Pragmatic Programmers, considerato uno dei libri fondamentali per chi usa questo linguaggio.
+            %p Paolo si guadagna da vivere come trainer, mentore e coach di team agili - ma il suo maggiore piacere è ancora scrivere codice. Vive a Bologna.                      
         .partecipanti
           %ul.people
             %li
               %h1 Ecco chi è già dei nostri
-          %a.partecipa{:href => "http://www.facebook.com/events/186802591414693"} Partecipa anche tu!
+          %a.partecipa{:href => "http://www.facebook.com/events/186802591414693", :target=>"_blank"} Partecipa anche tu!
         .materiale
           %h1 Materiale vecchie presentazioni
           %p
